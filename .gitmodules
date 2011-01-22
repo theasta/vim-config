@@ -43,3 +43,6 @@
 [submodule "bundle/phpfolding"]
 	path = bundle/phpfolding
 	url = git://github.com/vim-scripts/phpfolding.vim.git
+[submodule "bundle/renamer"]
+	path = bundle/renamer
+	url = git://github.com/vim-scripts/renamer.vim.git
