@@ -40,3 +40,6 @@
 [submodule "bundle/vim-supertab"]
 	path = bundle/vim-supertab
 	url = git://github.com/tsaleh/vim-supertab.git
+[submodule "bundle/phpfolding"]
+	path = bundle/phpfolding
+	url = git://github.com/vim-scripts/phpfolding.vim.git
