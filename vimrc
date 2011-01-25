@@ -128,11 +128,11 @@ nnoremap ; :
 imap jj <esc>
 
 " Bubble single lines
-nmap <C-Up> [e
-nmap <C-Down> ]e
+nmap <C-S-Up> [e
+nmap <C-S-Down> ]e
 " Bubble multiple lines
-vmap <C-Up> [egv
-vmap <C-Down> ]egv
+vmap <C-S-Up> [egv
+vmap <C-S-Down> ]egv
 
 cmap w!! w !sudo tee % >/dev/null
 
