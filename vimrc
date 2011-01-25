@@ -154,6 +154,12 @@ nnoremap / /\v
 vnoremap / /\v
 
 """"""""""""""""""""""""""""""
+" => FileType detection
+""""""""""""""""""""""""""""""
+
+au BufNewFile,BufRead *.twig			setf htmljinja
+
+""""""""""""""""""""""""""""""
 " => Abbrev.
 """"""""""""""""""""""""""""""
 
