@@ -185,8 +185,8 @@ map <leader>b :BufExplorer<cr>
 " => Command-T
 """"""""""""""""""""""""""""""
 let g:CommandTMaxHeight = 15
-noremap <leader>m :CommandT<cr>
-noremap <leader>flush :CommandTFlush<cr>
+noremap <leader>t :CommandT<cr>
+noremap <leader>fl :CommandTFlush<cr>
 
 """"""""""""""""""""""""""""""
 " => NERDTree
