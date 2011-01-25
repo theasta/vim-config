@@ -53,6 +53,8 @@ set title                         " Set the terminal's title
 
 set visualbell                    " No beeping.
 
+set cursorline                    " Highlight current line
+
 set splitbelow
 
 set foldenable
@@ -135,6 +137,16 @@ vmap <C-S-Down> ]egv
 
 cmap w!! w !sudo tee % >/dev/null
 
+" Delete buffer
+nmap <leader>d :bd<cr>
+
+" Delete buffer and file
+nmap <leader>DEL :!rm %<cr>:bd<cr>
+
+" Use perl regex style
+nnoremap / /\v
+vnoremap / /\v
+
 """"""""""""""""""""""""""""""
 " => Abbrev.
 """"""""""""""""""""""""""""""
@@ -151,6 +163,13 @@ map <F2> :!./symfony cc<cr>
 " => Statusline
 """"""""""""""""""""""""""""""
 set laststatus=2                 " Show the status line all the time
+
+" now set it up to change the status line based on mode
+if version >= 700
+  au InsertEnter * hi StatusLine term=reverse ctermbg=5 gui=undercurl guisp=Magenta
+  au InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
+endif
+
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
