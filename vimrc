@@ -195,6 +195,14 @@ nmap ,nt :NERDTreeToggle<cr>
 let NERDTreeShowHidden=1
 
 """"""""""""""""""""""""""""""
+" => Taglist
+""""""""""""""""""""""""""""""
+let g:Tlist_Ctags_Cmd = 'ctags'
+" Rebuild tag index
+nnoremap <silent> <C-F7> :silent !ctags-exuberant -h ".php" --PHP-kinds=+cf --recurse --exclude=*/cache/* --exclude=*/logs/* --exclude=*/data/* --exclude="\.git" --exclude="\.svn" --languages=PHP &<cr>:CommandTFlush<cr>
+nnoremap <silent> <F7> :TlistToggle<CR>
+
+""""""""""""""""""""""""""""""
 " => Colorscheme
 """"""""""""""""""""""""""""""
 set t_Co=256
