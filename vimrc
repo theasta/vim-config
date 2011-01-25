@@ -96,6 +96,12 @@ set smarttab                     "Uses shiftwidth instead of tabstop at the star
 set smartindent
 set autoindent
 
+set shiftround
+
+nmap <leader>2 :set tabstop=2<cr>:set shiftwidth=2<cr>:set softtabstop=2<cr>
+nmap <leader>3 :set tabstop=3<cr>:set shiftwidth=3<cr>:set softtabstop=3<cr>
+nmap <leader>4 :set tabstop=4<cr>:set shiftwidth=4<cr>:set softtabstop=4<cr>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => MAPPING
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
