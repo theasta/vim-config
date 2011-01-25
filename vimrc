@@ -125,7 +125,6 @@ map <leader>cd :cd %:p:h<cr>
 
 nmap <space> :
 nnoremap ; :
-imap jj <esc>
 
 " Bubble single lines
 nmap <C-S-Up> [e
