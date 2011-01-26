@@ -233,7 +233,9 @@ let NERDTreeShowHidden=1
 """"""""""""""""""""""""""""""
 let g:Tlist_Ctags_Cmd = 'ctags'
 " Rebuild tag index
-nnoremap <silent> <C-F7> :silent !ctags-exuberant -h ".php" --PHP-kinds=+cf --recurse --exclude=*/cache/* --exclude=*/logs/* --exclude=*/data/* --exclude="\.git" --exclude="\.svn" --languages=PHP &<cr>:CommandTFlush<cr>
+nmap <leader>tags :!./buildtags.sh<cr>:CommandTFlush<cr>
+" nmap <leader>tags :!./buildtags.sh <cr>:set tags=.ctags<cr>
+nmap <leader>ctags :!ctags -h ".php" --PHP-kinds=+cf --recurse --exclude=*/cache/* --exclude=*/logs/* --exclude=*/data/* --exclude="\.git" --exclude="\.svn" --languages=PHP &<cr>:CommandTFlush<cr> 
 nnoremap <silent> <F7> :TlistToggle<CR>
 
 """"""""""""""""""""""""""""""
