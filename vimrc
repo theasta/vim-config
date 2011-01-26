@@ -132,7 +132,7 @@ map <leader>cd :cd %:p:h<cr>
 "nmap ,server :Nread ftp://user:pwd@serveur/path/to/domain/<cr>
 
 nmap <space> :
-nnoremap ; :
+" nnoremap ; :
 
 " Bubble single lines
 nmap <C-S-Up> [e
