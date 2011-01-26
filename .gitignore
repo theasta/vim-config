@@ -2,5 +2,4 @@
 
 .netrwhist
 
-bundle/oddity/*
-bundle/oddity/**/*
+bundle/local/**/*
