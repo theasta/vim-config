@@ -158,6 +158,7 @@ vnoremap / /\v
 """"""""""""""""""""""""""""""
 
 au BufNewFile,BufRead *.twig			setf htmljinja
+au BufNewFile,BufRead *.less			setf css
 
 """"""""""""""""""""""""""""""
 " => Abbrev.
