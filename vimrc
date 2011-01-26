@@ -153,6 +153,8 @@ nmap <leader>DEL :!rm %<cr>:bd<cr>
 nnoremap / /\v
 vnoremap / /\v
 
+imap § ->
+
 """"""""""""""""""""""""""""""
 " => FileType detection
 """"""""""""""""""""""""""""""
