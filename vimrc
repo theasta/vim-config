@@ -223,12 +223,6 @@ noremap <leader>t :CommandT<cr>
 noremap <leader>fl :CommandTFlush<cr>
 
 """"""""""""""""""""""""""""""
-" => NERDTree
-""""""""""""""""""""""""""""""
-nmap ,nt :NERDTreeToggle<cr>
-let NERDTreeShowHidden=1
-
-""""""""""""""""""""""""""""""
 " => Taglist
 """"""""""""""""""""""""""""""
 let g:Tlist_Ctags_Cmd = 'ctags'
