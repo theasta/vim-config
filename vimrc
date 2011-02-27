@@ -154,6 +154,7 @@ nnoremap / /\v
 vnoremap / /\v
 
 imap § ->
+imap ± =>
 
 """"""""""""""""""""""""""""""
 " => FileType detection
