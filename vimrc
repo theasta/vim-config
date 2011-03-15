@@ -55,7 +55,7 @@ set visualbell                    " No beeping.
 
 set splitbelow
 
-set foldenable
+set nofoldenable
 
 set linespace=1
 
