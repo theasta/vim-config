@@ -84,12 +84,12 @@ set noswapfile                    " Use an SCM instead of swap files
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set tabstop=2                    " Global tab width.
-set shiftwidth=2                 " And again, related.
-set softtabstop=2                "Causes backspace to delete 4 spaces = converted <TAB>
+set tabstop=4                    " Global tab width.
+set shiftwidth=4                 " And again, related.
+set softtabstop=4                "Causes backspace to delete 4 spaces = converted <TAB>
 
 set expandtab                    " Use spaces instead of tabs
-set smarttab                     "Uses shiftwidth instead of tabstop at the start of lines
+"set smarttab                     "Uses shiftwidth instead of tabstop at the start of lines
 
 set smartindent
 set autoindent
