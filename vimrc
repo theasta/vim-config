@@ -53,8 +53,6 @@ set title                         " Set the terminal's title
 
 set visualbell                    " No beeping.
 
-set cursorline                    " Highlight current line
-
 set splitbelow
 
 set foldenable
@@ -221,5 +219,3 @@ let tlist_php_settings = 'php;c:class;f:function;d:constant'
 " => Colorscheme
 """"""""""""""""""""""""""""""
 set t_Co=256
-colorscheme mustang
-colors mustang
