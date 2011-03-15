@@ -12,6 +12,8 @@ set guioptions-=r                 " Don't show right scrollbar
 
 set cursorline                    " Highlight current line
 
+set number                        " Show line numbers.
+
 if has("gui_macvim")
   macmenu &File.New\ Tab key=<nop>
   map <D-t> :CommandT<CR>

@@ -28,7 +28,7 @@ set wildmenu                      " Enhanced command line completion.
 set wildmode=list:longest         " Complete files like a shell.
 set wildignore+=*.o,*.obj,.git,*.pyc,cache/**,log/**,test/**
 
-set number                        " Show line numbers.
+set nonumber                      " Show line numbers.
 set ruler                         " Show cursor position.
 
 set hidden                        " Handle multiple buffers better.
