@@ -222,6 +222,8 @@ nnoremap <silent> <F7> :TlistToggle<CR>
 
 let tlist_php_settings = 'php;c:class;f:function;d:constant'
 
+let g:LustyJugglerSuppressRubyWarning = 1
+
 """"""""""""""""""""""""""""""
 " => Colorscheme
 """"""""""""""""""""""""""""""
