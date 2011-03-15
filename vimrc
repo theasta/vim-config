@@ -191,6 +191,9 @@ set statusline +=%{SyntasticStatuslineFlag()}
 set statusline +=%*
 set statusline +=\ %=%-16(\ %l,%c-%v\ %)%P
 
+""""""""""""""""""""""""""""""
+" => matchit plugin
+""""""""""""""""""""""""""""""
 
 runtime macros/matchit.vim        " Load the matchit plugin.
 
