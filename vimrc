@@ -1,16 +1,15 @@
 set nocompatible                  " Must come first because it changes other options.
 
-filetype off
-silent! call pathogen#helptags()
-silent! call pathogen#runtime_append_all_bundles()
+#filetype off
+
+call pathogen#infect()
+syntax on
+filetype plugin indent on
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set history=700
-
-filetype plugin on
-filetype indent on
 
 " Set to auto read when a file is changed from the outside
 set autoread
@@ -63,8 +62,6 @@ set linespace=1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Basics 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-syntax enable                     " Turn on syntax highlighting.
 
 set encoding=utf8
 try
