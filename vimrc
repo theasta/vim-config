@@ -1,6 +1,6 @@
 set nocompatible                  " Must come first because it changes other options.
 
-#filetype off
+"filetype off
 
 call pathogen#infect()
 syntax on
