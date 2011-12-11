@@ -52,6 +52,3 @@
 [submodule "bundle/jasmine"]
 	path = bundle/jasmine
 	url = git@github.com:theasta/jasmine.vim.git
-[submodule "bundle/jslint"]
-	path = bundle/jslint
-	url = git@github.com:theasta/jslint.vim.git
