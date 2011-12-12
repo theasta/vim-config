@@ -209,6 +209,13 @@ let g:CommandTMaxHeight = 15
 noremap <leader>t :CommandT<cr>
 noremap <leader>fl :CommandTFlush<cr>
 
+
+""""""""""""""""""""""""""""""
+" => SuperTab 
+""""""""""""""""""""""""""""""
+"let g:SuperTabMappingForward = '<c-space>'
+"let g:SuperTabMappingBackward = '<s-c-space>'
+
 """"""""""""""""""""""""""""""
 " => Taglist
 """"""""""""""""""""""""""""""
