@@ -101,16 +101,11 @@ nmap <leader>4 :set tabstop=4<cr>:set shiftwidth=4<cr>:set softtabstop=4<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => MAPPING
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"<M-j> est équivalent à ALT+j
-"<C-j> est équivalent à CTRL+j
-"<D-j> est équivalent à CMD + j
+"<M-j> = ALT + j
+"<C-j> = CTRL + j
+"<D-j> = CMD + j
 
-" Map space to / (search) and c-space to ? (backgwards search)
-" map <space> /
-" map <c-space> ?
 map <silent> <leader><cr> :noh<cr>
-
-"map <CR> O<Esc>
 
 " Smart way to move btw. windows
 map <C-j> <C-W>j
@@ -128,7 +123,6 @@ map <leader>cd :cd %:p:h<cr>
 "nmap ,server :Nread ftp://user:pwd@serveur/path/to/domain/<cr>
 
 nmap <space> :
-" nnoremap ; :
 
 " Bubble single lines
 nmap <C-S-Up> [e
@@ -152,15 +146,12 @@ vnoremap / /\v
 """"""""""""""""""""""""""""""
 " => FileType detection
 """"""""""""""""""""""""""""""
-
 au BufNewFile,BufRead *.less			setf css
 
 """"""""""""""""""""""""""""""
 " => Abbrev.
 """"""""""""""""""""""""""""""
-
 abbrev ff :! open -a firefox.app %:p<cr>
-
 
 """"""""""""""""""""""""""""""
 " => Statusline
@@ -183,7 +174,6 @@ set statusline +=\ %=%-16(\ %l,%c-%v\ %)%P
 """"""""""""""""""""""""""""""
 " => matchit plugin
 """"""""""""""""""""""""""""""
-
 runtime macros/matchit.vim        " Load the matchit plugin.
 
 """"""""""""""""""""""""""""""
@@ -200,7 +190,6 @@ let g:CommandTMaxHeight = 15
 noremap <leader>t :CommandT<cr>
 noremap <leader>fl :CommandTFlush<cr>
 
-
 """"""""""""""""""""""""""""""
 " => SuperTab 
 """"""""""""""""""""""""""""""
@@ -208,16 +197,22 @@ noremap <leader>fl :CommandTFlush<cr>
 "let g:SuperTabMappingBackward = '<s-c-space>'
 
 """"""""""""""""""""""""""""""
+" => ctags 
+""""""""""""""""""""""""""""""
+nmap <leader>ctags :!ctags -h ".php" --PHP-kinds=+cf --recurse --exclude=*/cache/* --exclude=*/logs/* --exclude=*/data/* --exclude="\.git" --exclude="\.svn" --languages=PHP &<cr>:CommandTFlush<cr> 
+" To change tagfile name, add  ':set tags=.ctags<cr>'
+
+""""""""""""""""""""""""""""""
 " => Taglist
 """"""""""""""""""""""""""""""
 let g:Tlist_Ctags_Cmd = 'ctags'
-" Rebuild tag index
-" To change tagfile name, add  ':set tags=.ctags<cr>'
-nmap <leader>ctags :!ctags -h ".php" --PHP-kinds=+cf --recurse --exclude=*/cache/* --exclude=*/logs/* --exclude=*/data/* --exclude="\.git" --exclude="\.svn" --languages=PHP &<cr>:CommandTFlush<cr> 
 nnoremap <silent> <F7> :TlistToggle<CR>
 
 let tlist_php_settings = 'php;c:class;f:function;d:constant'
 
+""""""""""""""""""""""""""""""
+" => Lusty
+""""""""""""""""""""""""""""""
 let g:LustyJugglerSuppressRubyWarning = 1
 
 """"""""""""""""""""""""""""""
