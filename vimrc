@@ -162,11 +162,6 @@ au BufNewFile,BufRead *.less			setf css
 
 abbrev ff :! open -a firefox.app %:p<cr>
 
-""""""""""""""""""""""""""""""
-" => Symfony
-""""""""""""""""""""""""""""""
-map <F2> :!./symfony cc<cr>
-
 
 """"""""""""""""""""""""""""""
 " => Statusline
