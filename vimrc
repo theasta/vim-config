@@ -193,8 +193,9 @@ noremap <leader>fl :CommandTFlush<cr>
 """"""""""""""""""""""""""""""
 " => SuperTab 
 """"""""""""""""""""""""""""""
-"let g:SuperTabMappingForward = '<c-space>'
-"let g:SuperTabMappingBackward = '<s-c-space>'
+let g:SuperTabMappingForward = '<c-space>'
+let g:SuperTabMappingBackward = '<s-c-space>'
+let g:SuperTabMappingTabLiteral = '<tab>'
 
 """"""""""""""""""""""""""""""
 " => ctags 
