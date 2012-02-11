@@ -52,3 +52,6 @@
 [submodule "bundle/jasmine"]
 	path = bundle/jasmine
 	url = git@github.com:theasta/jasmine.vim.git
+[submodule "bundle/mustache"]
+	path = bundle/mustache
+	url = git://github.com/juvenn/mustache.vim.git
