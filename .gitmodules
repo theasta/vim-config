@@ -64,3 +64,6 @@
 [submodule "bundle/css-color"]
 	path = bundle/css-color
 	url = https://github.com/ap/vim-css-color.git
+[submodule "bundle/kwbd"]
+	path = bundle/kwbd
+	url = https://github.com/rgarver/Kwbd.vim.git
