@@ -199,6 +199,16 @@ let g:SuperTabMappingTabLiteral = '<tab>'
 nmap <leader>ctags :!ctags -h ".php" --PHP-kinds=+cf --recurse --exclude=*/cache/* --exclude=*/logs/* --exclude=*/data/* --exclude="\.git" --exclude="\.svn" --languages=PHP &<cr>:CommandTFlush<cr> 
 " To change tagfile name, add  ':set tags=.ctags<cr>'
 
+""""""""""""""""""""""""""""""
+" => Buffergator
+""""""""""""""""""""""""""""""
+nmap <leader>b :BuffergatorToggle<CR>
+let g:buffergator_suppress_keymaps = 1
+
+""""""""""""""""""""""""""""""
+" => Tagbar
+""""""""""""""""""""""""""""""
+nmap <F8> :TagbarToggle<CR>
 
 """"""""""""""""""""""""""""""
 " => Colorscheme
