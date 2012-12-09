@@ -58,3 +58,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
+[submodule "bundle/vim-php"]
+	path = bundle/vim-php
+	url = https://github.com/vim-scripts/php.vim--Hodge.git
