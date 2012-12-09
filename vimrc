@@ -26,7 +26,7 @@ set scrolloff=3                   " Show 3 lines of context around the cursor.
 
 set wildmenu                      " Enhanced command line completion.
 set wildmode=list:longest         " Complete files like a shell.
-set wildignore+=*.o,*.obj,.git,*.pyc,cache/**,log/**,test/**,node_modules/**
+set wildignore+=*.o,*.obj,.git,*.pyc,cache/**,log/**,test/**,*/node_modules/*
 
 set nonumber                      " Show line numbers.
 set ruler                         " Show cursor position.
