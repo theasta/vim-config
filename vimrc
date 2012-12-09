@@ -178,13 +178,6 @@ set statusline +=\ %=%-16(\ %l,%c-%v\ %)%P
 runtime macros/matchit.vim        " Load the matchit plugin.
 
 """"""""""""""""""""""""""""""
-" => bufExplorer plugin
-""""""""""""""""""""""""""""""
-let g:bufExplorerDefaultHelp=0
-let g:bufExplorerShowRelativePath=1
-map <leader>b :BufExplorer<cr>
-
-""""""""""""""""""""""""""""""
 " => CtrlP
 """"""""""""""""""""""""""""""
 noremap <leader>t :CtrlP<cr>
@@ -201,6 +194,7 @@ let g:SuperTabMappingTabLiteral = '<tab>'
 """"""""""""""""""""""""""""""
 nmap <leader>ctags :!ctags -h ".php" --PHP-kinds=+cf --recurse --exclude=*/cache/* --exclude=*/logs/* --exclude=*/data/* --exclude="\.git" --exclude="\.svn" --languages=PHP &<cr>:CommandTFlush<cr> 
 " To change tagfile name, add  ':set tags=.ctags<cr>'
+
 
 """"""""""""""""""""""""""""""
 " => Colorscheme
