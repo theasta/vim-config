@@ -205,14 +205,6 @@ nmap <leader>ctags :!ctags -h ".php" --PHP-kinds=+cf --recurse --exclude=*/cache
 " To change tagfile name, add  ':set tags=.ctags<cr>'
 
 """"""""""""""""""""""""""""""
-" => Taglist
-""""""""""""""""""""""""""""""
-let g:Tlist_Ctags_Cmd = 'ctags'
-nnoremap <silent> <F7> :TlistToggle<CR>
-
-let tlist_php_settings = 'php;c:class;f:function;d:constant'
-
-""""""""""""""""""""""""""""""
 " => Lusty
 """"""""""""""""""""""""""""""
 let g:LustyJugglerSuppressRubyWarning = 1
