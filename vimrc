@@ -203,11 +203,6 @@ nmap <leader>ctags :!ctags -h ".php" --PHP-kinds=+cf --recurse --exclude=*/cache
 " To change tagfile name, add  ':set tags=.ctags<cr>'
 
 """"""""""""""""""""""""""""""
-" => Lusty
-""""""""""""""""""""""""""""""
-let g:LustyJugglerSuppressRubyWarning = 1
-
-""""""""""""""""""""""""""""""
 " => Colorscheme
 """"""""""""""""""""""""""""""
 set t_Co=256
