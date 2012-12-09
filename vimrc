@@ -185,11 +185,9 @@ let g:bufExplorerShowRelativePath=1
 map <leader>b :BufExplorer<cr>
 
 """"""""""""""""""""""""""""""
-" => Command-T
+" => CtrlP
 """"""""""""""""""""""""""""""
-let g:CommandTMaxHeight = 15
-noremap <leader>t :CommandT<cr>
-noremap <leader>fl :CommandTFlush<cr>
+noremap <leader>t :CtrlP<cr>
 
 """"""""""""""""""""""""""""""
 " => SuperTab 
