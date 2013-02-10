@@ -138,9 +138,6 @@ vmap <C-S-Down> ]egv
 
 cmap w!! w !sudo tee % >/dev/null
 
-" Delete buffer
-nmap <leader>d :bd<cr>
-
 " Delete buffer and file
 nmap <leader>DEL :!rm %<cr>:bd<cr>
 
