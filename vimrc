@@ -130,8 +130,8 @@ map <leader>cd :cd %:p:h<cr>
 nmap <space> :
 
 " Bubble single lines
-nmap <C-S-Up> [e
-nmap <C-S-Down> ]e
+nmap <C-S-Up> <Plug>unimpairedMoveUp
+nmap <C-S-Down> <Plug>unimpairedMoveDown
 " Bubble multiple lines
 vmap <C-S-Up> [egv
 vmap <C-S-Down> ]egv
